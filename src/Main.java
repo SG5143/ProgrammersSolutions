@@ -4,11 +4,12 @@
 
 public class Main {
     public static void main(String[] args) {
-        Sol_12938 sol = new Sol_12938();
-        int[] result = sol.solution(3, 11);
+        Sol_154540 sol = new Sol_154540();
+        String[] map = new String[]{"X591X","X1X5X","X231X", "1XXX1"};
+        int[] result = sol.solution(map);
 
-        for(int i=0; i<result.length; i++){
-            System.out.print(result[i] + " ");
+        for (int j : result) {
+            System.out.print(j + " ");
         }
 
     }
