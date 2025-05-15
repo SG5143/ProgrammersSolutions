@@ -4,12 +4,10 @@
 
 public class Main {
     public static void main(String[] args) {
-        Sol_12946 sol = new Sol_12946();
-        int[][] result = sol.solution(6);
+        Sol_86971 sol = new Sol_86971();
+        int[][] arr = new int[][]{{1,3},{2,3},{3,4},{4,5},{4,6},{4,7},{7,8},{7,9}};
+        int result = sol.solution(9,arr);
 
-        for (int[] a : result) {
-            System.out.print("[" + a[0] + ", " + a[1] + "] ");
-        }
-
+        System.out.println(result);
     }
 }
