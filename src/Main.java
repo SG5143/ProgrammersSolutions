@@ -4,9 +4,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        Sol_86971 sol = new Sol_86971();
-        int[][] arr = new int[][]{{1,3},{2,3},{3,4},{4,5},{4,6},{4,7},{7,8},{7,9}};
-        int result = sol.solution(9,arr);
+        Sol_389479 sol = new Sol_389479();
+        int[] arr = new int[]{0, 2, 3, 3, 1, 2, 0, 0, 0, 0, 4, 2, 0, 6, 0, 4, 2, 13, 3, 5, 10, 0, 1, 5};
+        int result = sol.solution(arr,3,5);
 
         System.out.println(result);
     }
