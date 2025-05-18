@@ -4,8 +4,12 @@
 
 public class Main {
     public static void main(String[] args) {
-        Sol_389478 sol = new Sol_389478();
-        int result = sol.solution(22, 6, 8);
+        Sol_388353 sol = new Sol_388353();
+
+        String[] storage = new String[]{"AZWQY", "CAABX", "BBDDA", "ACACA"};
+        String[] requests = new String[]{"A", "BB", "A"};
+
+        int result = sol.solution(storage, requests);
 
         System.out.println(result);
     }
