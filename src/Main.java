@@ -4,12 +4,15 @@
 
 public class Main {
     public static void main(String[] args) {
-        Sol_388351 sol = new Sol_388351();
+        Sol_340213 sol = new Sol_340213();
 
-        int[] schedules = new int[]{700, 800, 1100};
-        int[][] timelogs = new int[][]{{710, 2359, 1050, 700, 650, 631, 659}, {800, 801, 805, 800, 759, 810, 809}, {1105, 1001, 1002, 600, 1059, 1001, 1100}};
+        String video_len = "10:55";
+        String pos = "00:05";
+        String op_start = "00:15";
+        String op_end = "06:55";
+        String[] commands = new String[]{"prev", "next", "next"};
 
-        int result = sol.solution(schedules, timelogs,5);
+        String result = sol.solution(video_len, pos, op_start, op_end, commands);
 
         System.out.println(result);
     }
