@@ -18,8 +18,8 @@
  */
 
 public class Sol_340213 {
-    private static final String COMMAND_PREV = "prev"; // 명령어 PREV 상수
-    private static final String COMMAND_NEXT = "next"; // 명령어 NEXT 상수
+    private static final String COMMAND_PREV = "prev"; // 명령어 prev 상수
+    private static final String COMMAND_NEXT = "next"; // 명령어 next 상수
     private static final int TIME_STEP = 10; // 10초 이동 상수
 
 
@@ -50,8 +50,8 @@ public class Sol_340213 {
         return currentTime;
     }
 
+    // "next" 명령 처리 메서드
     private int handleNext(int currentTime, int videoTime, int opStart, int opEnd) {
-
         // 오프닝 내부일 경우 오프닝 끝자락으로 스킵
         if (isWithinOpening(currentTime, opStart, opEnd)) {
             currentTime = Math.min(opEnd + TIME_STEP, videoTime);
