@@ -4,12 +4,11 @@
 
 public class Main {
     public static void main(String[] args) {
-        Sol_42576 sol = new Sol_42576();
+        Sol_42892 sol = new Sol_42892();
 
-        String[] participant = new String[]{"leo", "eden", "kiki"};
-        String[] completion = new String[]{"eden", "kiki"};
+        int[][] nodeinfo = new int[][]{{5,3},{11,5},{13,3},{3,5},{6,1},{1,3},{8,6},{7,2},{2,2}};
 
-        String result = sol.solution(participant,completion);
+        int[][] result = sol.solution(nodeinfo);
 
         System.out.println(result);
     }
