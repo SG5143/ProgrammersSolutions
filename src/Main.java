@@ -4,13 +4,11 @@
 
 public class Main {
     public static void main(String[] args) {
-        Sol_12906 sol = new Sol_12906();
+        Sol_42626 sol = new Sol_42626();
 
-        int[] arr = {1,1,3,3,0,1,1};
-        int[] result = sol.solution(arr);
+        int[] arr = {1, 2, 3, 9, 10, 12};
+        int result = sol.solution(arr, 7);
 
-        for(int i : result){
-            System.out.print(i+" ");
-        }
+        System.out.println(result);
     }
 }
