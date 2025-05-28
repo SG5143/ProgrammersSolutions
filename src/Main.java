@@ -4,11 +4,15 @@
 
 public class Main {
     public static void main(String[] args) {
-        Sol_42626 sol = new Sol_42626();
+        Sol_42586 sol = new Sol_42586();
 
-        int[] arr = {1, 2, 3, 9, 10, 12};
-        int result = sol.solution(arr, 7);
+        int[] progresses = new int[]{93, 30, 55};
+        int[] speeds = new int[]{1, 30, 5};
 
-        System.out.println(result);
+        int[] result = sol.solution(progresses, speeds);
+
+        for(int r: result){
+            System.out.print(r + " ");
+        }
     }
 }
