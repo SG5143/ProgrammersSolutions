@@ -21,33 +21,34 @@ import java.util.Arrays;
     이때 이 학생은 체육복을 하나만 도난당했다고 가정하며,
     남은 체육복이 하나이기에 다른 학생에게는 체육복을 빌려줄 수 없습니다.
  */
+
 public class Sol_42862 {
     public int solution(int n, int[] lost, int[] reserve) {
 
-        int[] student = new int[n];
-        Arrays.fill(student, 1);
+        int[] uniforms = new int[n];
+        Arrays.fill(uniforms, 1);
 
         for (int l : lost) {
-            student[l - 1]--;
+            uniforms[l - 1]--;
         }
 
         for (int r : reserve) {
-            student[r - 1]++;
+            uniforms[r - 1]++;
         }
 
-        for (int i = 0; i < student.length; i++) {
-            if (student[i] == 2) {
-                if (i - 1 >= 0 && student[i - 1] == 0) {
-                    student[i - 1]++;
-                    student[i]--;
-                } else if (i + 1 < student.length && student[i + 1] == 0) {
-                    student[i + 1]++;
-                    student[i]--;
+        for (int i = 0; i < n; i++) {
+            if (uniforms[i] == 2) {
+                if (i > 1 && uniforms[i - 1] == 0) {
+                    uniforms[i - 1]++;
+                    uniforms[i]--;
+                } else if (i + 1 < n && uniforms[i + 1] == 0) {
+                    uniforms[i + 1]++;
+                    uniforms[i]--;
                 }
             }
         }
 
-        for (int j : student) {
+        for (int j : uniforms) {
             if (j == 0) n--;
         }
 
