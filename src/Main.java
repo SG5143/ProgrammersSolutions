@@ -4,15 +4,14 @@
 
 public class Main {
     public static void main(String[] args) {
-        Sol_42586 sol = new Sol_42586();
+        Sol_42862 sol = new Sol_42862();
 
-        int[] progresses = new int[]{93, 30, 55};
-        int[] speeds = new int[]{1, 30, 5};
+        int n = 5;
+        int[] lost = new int[]{2, 4};
+        int[] reserve = new int[]{3};
 
-        int[] result = sol.solution(progresses, speeds);
+        int result = sol.solution(n, lost, reserve);
 
-        for(int r: result){
-            System.out.print(r + " ");
-        }
+        System.out.println("\n"+result);
     }
 }
