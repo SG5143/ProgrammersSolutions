@@ -4,15 +4,11 @@
 
 public class Main {
     public static void main(String[] args) {
-        Sol_42748 sol = new Sol_42748();
+        Sol_43165 sol = new Sol_43165();
 
-        int[] arr = new int[]{1, 5, 2, 6, 3, 7, 4};
-        int[][] commands = new int[][]{{2, 5, 3}, {4, 4, 1}, {1, 7, 3}};
+        int[] numbers = new int[]{4,1,2,1};
+        int target = 4;
 
-        int[] result = sol.solution(arr, commands);
-
-        for (int r : result) {
-            System.out.print(r + " ");
-        }
+        System.out.println(sol.solution(numbers, target));
     }
 }
