@@ -4,11 +4,11 @@
 
 public class Main {
     public static void main(String[] args) {
-        Sol_43165 sol = new Sol_43165();
+        Sol_42587 sol = new Sol_42587();
 
-        int[] numbers = new int[]{4,1,2,1};
-        int target = 4;
+        int[] priorities = new int[]{2, 1, 3, 2};
+        int location = 2;
 
-        System.out.println(sol.solution(numbers, target));
+        System.out.println(sol.solution(priorities, location));
     }
 }
