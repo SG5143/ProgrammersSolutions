@@ -1,14 +1,18 @@
+import java.util.Arrays;
+
 /**
  * 출력 테스트 용도
  */
 
 public class Main {
     public static void main(String[] args) {
-        Sol_42587 sol = new Sol_42587();
+        Sol_42842 sol = new Sol_42842();
 
-        int[] priorities = new int[]{2, 1, 3, 2};
-        int location = 2;
+        int brown = 10;
+        int yellow = 2;
 
-        System.out.println(sol.solution(priorities, location));
+        int[] result = sol.solution(brown, yellow);
+
+        System.out.println(Arrays.toString(result));
     }
 }
