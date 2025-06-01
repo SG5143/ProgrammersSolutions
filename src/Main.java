@@ -6,13 +6,11 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_42842 sol = new Sol_42842();
+        Sol_12953 sol = new Sol_12953();
 
-        int brown = 10;
-        int yellow = 2;
+        int[] arr = new int[]{2,6,8,14};
 
-        int[] result = sol.solution(brown, yellow);
+        System.out.println(sol.solution(arr));
 
-        System.out.println(Arrays.toString(result));
     }
 }
