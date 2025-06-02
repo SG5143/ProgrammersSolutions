@@ -6,9 +6,9 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_12953 sol = new Sol_12953();
+        Sol_1845 sol = new Sol_1845();
 
-        int[] arr = new int[]{2,6,8,14};
+        int[] arr = new int[]{3,3,3,2,2,4};
 
         System.out.println(sol.solution(arr));
 
