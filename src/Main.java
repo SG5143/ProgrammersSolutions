@@ -6,11 +6,9 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_1845 sol = new Sol_1845();
+        Sol_42577 sol = new Sol_42577();
 
-        int[] arr = new int[]{3,3,3,2,2,4};
-
-        System.out.println(sol.solution(arr));
-
+        String[] phone_book = new String[]{"119", "97674223", "1195524421"};
+        System.out.println(sol.solution(phone_book));
     }
 }
