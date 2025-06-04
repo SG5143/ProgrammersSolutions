@@ -6,9 +6,12 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_42577 sol = new Sol_42577();
+        Sol_42578 sol = new Sol_42578();
 
-        String[] phone_book = new String[]{"119", "97674223", "1195524421"};
-        System.out.println(sol.solution(phone_book));
+        String[][] clothes = new String[][]{
+                {"yellow_hat", "headgear"},
+                {"blue_sunglasses", "eyewear"},
+                {"green_turban", "headgear"}};
+        System.out.println(sol.solution(clothes));
     }
 }
