@@ -6,12 +6,11 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_42578 sol = new Sol_42578();
+        Sol_42579 sol = new Sol_42579();
 
-        String[][] clothes = new String[][]{
-                {"yellow_hat", "headgear"},
-                {"blue_sunglasses", "eyewear"},
-                {"green_turban", "headgear"}};
-        System.out.println(sol.solution(clothes));
+        String[] genres = new String[]{"classic", "pop", "classic", "classic", "pop"};
+        int[] plays = new int[]{500, 600, 150, 800, 2500};
+
+        System.out.println(Arrays.toString(sol.solution(genres, plays)));
     }
 }
