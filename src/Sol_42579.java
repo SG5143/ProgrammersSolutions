@@ -24,58 +24,43 @@ import java.util.*;
 public class Sol_42579 {
     private static class Song{
         public int totalPlayCount = 0;
-        public HashMap<Integer,Integer> map = new HashMap<>();
+        public List<int[]> songs = new ArrayList<>();
 
-        public void putSong(int index, int playCount){
-            this.map.put(index, playCount);
+        public void addSong(int index, int playCount){
+            this.songs.add(new int[]{index, playCount});
             this.totalPlayCount += playCount;
         }
 
-        public void getBestSongIndex(List<Integer> indexes){
-            List<Integer> keys = new ArrayList<>(map.keySet());
-            keys.sort(new Comparator<Integer>() {
-                @Override
-                public int compare(Integer o1, Integer o2) {
-                    return map.get(o2) - map.get(o1);
-                }
-            });
+        public void getBestSongIndex(List<Integer> indexes) {
+            // 재행 횟수가 같으면 인덱스 오름차순, 재생홧수 내림차순
+            // 조건에 모든 장르는 재생된 횟수가 다릅니다 << 조건이 있어 비교 안해도 무방
+            this.songs.sort((a, b) -> a[1] == b[1] ? a[0] - b[0] : a[1] - b[1]);
+            indexes.add(this.songs.get(0)[0]);
 
-            indexes.add(keys.get(0));
-            if(map.size() > 1)
-                indexes.add(keys.get(1));
+            if (this.songs.size() > 1)
+                indexes.add(this.songs.get(1)[0]);
         }
     }
 
     public int[] solution(String[] genres, int[] plays) {
+        // 장르별 노래 정보 저장
         HashMap<String, Song> map = new HashMap<>();
-
         for (int i = 0; i < genres.length; i++) {
-            if (map.containsKey(genres[i])) {
-                Song song = map.get(genres[i]);
-                song.putSong(i, plays[i]);
-            }else{
-                Song song = new Song();
-                song.putSong(i, plays[i]);
-                map.put(genres[i], song);
-            }
+            map.computeIfAbsent(genres[i], s -> new Song()).addSong(i, plays[i]);
         }
 
-        List<String> keys = new ArrayList<>(map.keySet());
-        keys.sort(new Comparator<String>(){
-            @Override
-            public int compare(String o1, String o2) {
-                return map.get(o2).totalPlayCount - map.get(o1).totalPlayCount;
-            }
-        });
+        // 장르별 총 재생횟수 기준으로 정렬 내림차순
+        List<String> genresList = new ArrayList<>(map.keySet());
+        genresList.sort((a, b) -> map.get(b).totalPlayCount - map.get(a).totalPlayCount);
 
-
-        List<Integer> indexes = new ArrayList<>();
-        for(String song : keys){
-            System.out.println("=============");
-            System.out.printf("KEY: %s\ntotal: %d\n", song, map.get(song).totalPlayCount);
-            map.get(song).getBestSongIndex(indexes);
+        // 각 장르 상위 곡 추출(최대 두곡)
+        List<Integer> results = new ArrayList<>();
+        for(String genre : genresList) {
+//            System.out.println("==============");
+//            System.out.printf("KEY: %s\nTOTAL: %d\n", genre, map.get(genre).totalPlayCount);
+            map.get(genre).getBestSongIndex(results);
         }
 
-        return indexes.stream().mapToInt(Integer::intValue).toArray();
+        return results.stream().mapToInt(Integer::intValue).toArray();
     }
 }
