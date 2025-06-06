@@ -6,11 +6,10 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_42579 sol = new Sol_42579();
+        Sol_12909 sol = new Sol_12909();
 
-        String[] genres = new String[]{"classic", "pop", "classic", "classic", "pop"};
-        int[] plays = new int[]{500, 600, 150, 800, 2500};
+        String s = "()()()";
 
-        System.out.println(Arrays.toString(sol.solution(genres, plays)));
+        System.out.println(sol.solution(s) ? "YES" : "NO");
     }
 }
