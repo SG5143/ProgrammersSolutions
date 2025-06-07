@@ -6,10 +6,12 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_12909 sol = new Sol_12909();
+        Sol_42583 sol = new Sol_42583();
 
-        String s = "()()()";
+        int bridge_length = 2;
+        int weight = 10;
+        int[] truck_weight = new int[]{7,4,5,6};
 
-        System.out.println(sol.solution(s) ? "YES" : "NO");
+        System.out.println(sol.solution(bridge_length, weight, truck_weight));
     }
 }
