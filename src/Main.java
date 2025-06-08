@@ -1,17 +1,13 @@
-import java.util.Arrays;
+// 출력 테스트 용도
 
-/**
- * 출력 테스트 용도
- */
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_42583 sol = new Sol_42583();
+        Sol_42584 sol = new Sol_42584();
 
-        int bridge_length = 2;
-        int weight = 10;
-        int[] truck_weight = new int[]{7,4,5,6};
+        int[] prices = new int[]{1, 2, 3, 2, 3};
 
-        System.out.println(sol.solution(bridge_length, weight, truck_weight));
+        System.out.println(Arrays.toString(sol.solution(prices)));
     }
 }
