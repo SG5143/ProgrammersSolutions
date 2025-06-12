@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_42747 sol = new Sol_42747();
+        Sol_181188 sol = new Sol_181188();
 
-        int[] citations = new int[]{3, 0, 6, 1, 5};
-
-        System.out.println(sol.solution(citations));
+        int[][] targets = { {4, 5}, {4, 8}, {10, 14}, {11, 13}, {5, 12} };
+        int result = sol.solution(targets);
+        System.out.println(result);
     }
 }
