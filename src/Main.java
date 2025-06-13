@@ -4,10 +4,9 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_181188 sol = new Sol_181188();
+        Sol_68645 sol = new Sol_68645();
 
-        int[][] targets = { {4, 5}, {4, 8}, {10, 14}, {11, 13}, {5, 12} };
-        int result = sol.solution(targets);
-        System.out.println(result);
+        int n = 10;
+        System.out.println(Arrays.toString(sol.solution(n)));
     }
 }
