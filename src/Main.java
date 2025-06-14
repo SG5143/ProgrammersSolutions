@@ -1,12 +1,12 @@
 // 출력 테스트 용도
-
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_68645 sol = new Sol_68645();
+        Sol_12941 sol = new Sol_12941();
 
-        int n = 10;
-        System.out.println(Arrays.toString(sol.solution(n)));
+        int[] A = new int[]{1, 4, 2};
+        int[] B = new int[]{5, 4, 4};
+        System.out.println(sol.solution(A, B));
     }
 }
