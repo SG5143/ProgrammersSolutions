@@ -3,15 +3,15 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_86053 sol = new Sol_86053();
+        Sol_176963 sol = new Sol_176963();
 
-        int a = 90;
-        int b = 500;
-        int[] g = new int[]{70,70,0};
-        int[] s = new int[]{0,0,500};
-        int[] w = new int[]{100,100,2};
-        int[] t = new int[]{4,8,1};
+        String[] name = new String[]{"may", "kein", "kain", "radi"};
+        int[] yearning = new int[]{5, 10, 1, 3};
+        String[][] photo = new String[][]{
+                {"may", "kein", "kain", "radi"},
+                {"may", "kein", "brin", "deny"},
+                {"kon", "kain", "may", "coni"}};
 
-        System.out.println(sol.solution(a, b, g, s, w, t));
+        System.out.println(Arrays.toString(sol.solution(name,yearning,photo)));
     }
 }
