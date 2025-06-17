@@ -3,15 +3,16 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_176963 sol = new Sol_176963();
+        Sol_258709 sol = new Sol_258709();
 
-        String[] name = new String[]{"may", "kein", "kain", "radi"};
-        int[] yearning = new int[]{5, 10, 1, 3};
-        String[][] photo = new String[][]{
-                {"may", "kein", "kain", "radi"},
-                {"may", "kein", "brin", "deny"},
-                {"kon", "kain", "may", "coni"}};
+        int[][] dice = new int[][]{
+                {1, 2, 3, 4, 5, 6},
+                {3, 3, 3, 3, 4, 4},
+                {1, 3, 3, 4, 4, 4},
+                {1, 1, 4, 4, 5, 5}
+        };
 
-        System.out.println(Arrays.toString(sol.solution(name,yearning,photo)));
+        int[] result = sol.solution(dice);
+        System.out.println(Arrays.toString(result));
     }
 }
