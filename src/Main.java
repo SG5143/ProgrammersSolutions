@@ -3,16 +3,12 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_258709 sol = new Sol_258709();
+        Sol_132267 sol = new Sol_132267();
 
-        int[][] dice = new int[][]{
-                {1, 2, 3, 4, 5, 6},
-                {3, 3, 3, 3, 4, 4},
-                {1, 3, 3, 4, 4, 4},
-                {1, 1, 4, 4, 5, 5}
-        };
+        int a = 2;
+        int b = 1;
+        int n = 20;
 
-        int[] result = sol.solution(dice);
-        System.out.println(Arrays.toString(result));
+        System.out.println(sol.solution(a, b, n));
     }
 }
