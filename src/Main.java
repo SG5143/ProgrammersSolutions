@@ -3,12 +3,13 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_132267 sol = new Sol_132267();
+        Sol_172928 sol = new Sol_172928();
 
-        int a = 2;
-        int b = 1;
-        int n = 20;
+        String[] park = new String[]{"SOO","OOO","OOO"};
+        String[] route = new String[]{"E 2","S 2","W 1"};
 
-        System.out.println(sol.solution(a, b, n));
+        int[] result = sol.solution(park, route);
+
+        System.out.println(Arrays.toString(result));
     }
 }
