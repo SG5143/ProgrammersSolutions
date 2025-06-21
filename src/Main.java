@@ -3,13 +3,19 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_172928 sol = new Sol_172928();
+        Sol_250125 sol = new Sol_250125();
 
-        String[] park = new String[]{"SOO","OOO","OOO"};
-        String[] route = new String[]{"E 2","S 2","W 1"};
+        String[][] board = new String[][]{
+                {"blue", "red", "orange", "red"},
+                {"red", "red", "blue", "orange"},
+                {"blue", "orange", "red", "red"},
+                {"orange", "orange", "red", "blue"}};
 
-        int[] result = sol.solution(park, route);
+        int h = 1;
+        int w = 1;
 
-        System.out.println(Arrays.toString(result));
+        int result = sol.solution(board, h, w);
+
+        System.out.println(result);
     }
 }
