@@ -3,19 +3,13 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_250125 sol = new Sol_250125();
+        Sol_178871 sol = new Sol_178871();
 
-        String[][] board = new String[][]{
-                {"blue", "red", "orange", "red"},
-                {"red", "red", "blue", "orange"},
-                {"blue", "orange", "red", "red"},
-                {"orange", "orange", "red", "blue"}};
+        String[] players = new String[] {"mumu", "soe", "poe", "kai", "mine"};
+        String[] callings = new String[] {"kai", "kai", "mine", "mine"};
 
-        int h = 1;
-        int w = 1;
+        String[] result = sol.solution(players, callings);
 
-        int result = sol.solution(board, h, w);
-
-        System.out.println(result);
+        System.out.println(Arrays.toString(result));
     }
 }
