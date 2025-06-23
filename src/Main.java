@@ -3,13 +3,11 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_178871 sol = new Sol_178871();
+        Sol_340199 sol = new Sol_340199();
 
-        String[] players = new String[] {"mumu", "soe", "poe", "kai", "mine"};
-        String[] callings = new String[] {"kai", "kai", "mine", "mine"};
+        int[] wallet = new int[]{30, 15};
+        int[] bill = new int[]{26, 17};
 
-        String[] result = sol.solution(players, callings);
-
-        System.out.println(Arrays.toString(result));
+        System.out.println(sol.solution(wallet, bill));
     }
 }
