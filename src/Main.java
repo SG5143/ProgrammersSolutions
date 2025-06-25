@@ -3,12 +3,11 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_161989 sol = new Sol_161989();
+        Sol_160586 sol = new Sol_160586();
 
-        int n = 8;
-        int m = 4;
-        int[] section = new int[]{2,3,6};
+        String[] keymap = new String[]{"ABACD", "BCEFD"};
+        String[] target = new String[]{"ABCD","AABB"};
 
-        System.out.println(sol.solution(n, m, section));
+        System.out.println(Arrays.toString(sol.solution(keymap, target)));
     }
 }
