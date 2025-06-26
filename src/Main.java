@@ -3,11 +3,12 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_160586 sol = new Sol_160586();
+        Sol_131705 sol = new Sol_131705();
 
-        String[] keymap = new String[]{"ABACD", "BCEFD"};
-        String[] target = new String[]{"ABCD","AABB"};
+        int[] number = new int[]{-2, 3, 0, 2, -5};
 
-        System.out.println(Arrays.toString(sol.solution(keymap, target)));
+        int result = sol.solution(number);
+
+        System.out.println(result);
     }
 }
