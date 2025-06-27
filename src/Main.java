@@ -3,12 +3,11 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_131705 sol = new Sol_131705();
+        Sol_70128 sol = new Sol_70128();
 
-        int[] number = new int[]{-2, 3, 0, 2, -5};
+        int[] a = new int[]{1,2,3,4};
+        int[] b = new int[]{-3,-1,0,2};
 
-        int result = sol.solution(number);
-
-        System.out.println(result);
+        System.out.println(sol.solution(a, b));
     }
 }
