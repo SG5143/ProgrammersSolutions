@@ -3,11 +3,9 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_70128 sol = new Sol_70128();
+        Sol_86051 sol = new Sol_86051();
 
-        int[] a = new int[]{1,2,3,4};
-        int[] b = new int[]{-3,-1,0,2};
-
-        System.out.println(sol.solution(a, b));
+        int[] number = new int[]{1,2,3,4,6,7,8,0};
+        System.out.println(sol.solution(number));
     }
 }
