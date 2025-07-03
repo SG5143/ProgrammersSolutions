@@ -3,9 +3,9 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_12934 sol = new Sol_12934();
+        Sol_12930 sol = new Sol_12930();
 
-        long number =  121;
-        System.out.println(sol.solution(number));
+        String s = "try hello world";
+        System.out.println(sol.solution(s));
     }
 }
