@@ -3,9 +3,11 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_12930 sol = new Sol_12930();
+        Sol_76501 sol = new Sol_76501();
 
-        String s = "try hello world";
-        System.out.println(sol.solution(s));
+        int[] absolutes = new int[]{4,7,12};
+        boolean[] signs = new boolean[]{true,false,true};
+
+        System.out.println(sol.solution(absolutes, signs));
     }
 }
