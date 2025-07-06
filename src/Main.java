@@ -1,12 +1,17 @@
 // 출력 테스트 용도
+
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_68935 sol = new Sol_68935();
+        Sol_250137 sol = new Sol_250137();
 
-        int n = 45;
+        int[] bandage = {5, 1, 5};
+        int health = 30;
+        int[][] attack = new int[][]{{2, 10}, {9, 15}, {10, 5}, {11, 5}};
 
-        System.out.println(sol.solution(n));
+        int result = sol.solution(bandage, health, attack);
+
+        System.out.println(result);
     }
 }
