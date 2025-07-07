@@ -1,17 +1,15 @@
 // 출력 테스트 용도
-
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_250137 sol = new Sol_250137();
+        Sol_250121 sol = new Sol_250121();
 
-        int[] bandage = {5, 1, 5};
-        int health = 30;
-        int[][] attack = new int[][]{{2, 10}, {9, 15}, {10, 5}, {11, 5}};
+        int[][] data = new int[][]{{1, 20300104, 100, 80}, {2, 20300804, 847, 37}, {3, 20300401, 10, 8}};
+        String ext = "date";
+        int val_ext = 20300501;
+        String sort_by = "remain";
 
-        int result = sol.solution(bandage, health, attack);
-
-        System.out.println(result);
+        sol.solution(data, ext, val_ext, sort_by);
     }
 }
