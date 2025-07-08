@@ -3,13 +3,10 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_250121 sol = new Sol_250121();
+        Sol_161990 sol = new Sol_161990();
 
-        int[][] data = new int[][]{{1, 20300104, 100, 80}, {2, 20300804, 847, 37}, {3, 20300401, 10, 8}};
-        String ext = "date";
-        int val_ext = 20300501;
-        String sort_by = "remain";
+        String[] wallpaper = new String[]{".##...##.", "#..#.#..#", "#...#...#", ".#.....#.", "..#...#..", "...#.#...", "....#...."};
 
-        sol.solution(data, ext, val_ext, sort_by);
+        System.out.println(Arrays.toString(sol.solution(wallpaper)));
     }
 }
