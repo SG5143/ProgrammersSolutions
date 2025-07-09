@@ -3,10 +3,11 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_161990 sol = new Sol_161990();
+        Sol_147355 sol = new Sol_147355();
 
-        String[] wallpaper = new String[]{".##...##.", "#..#.#..#", "#...#...#", ".#.....#.", "..#...#..", "...#.#...", "....#...."};
+        String t = "3141592";
+        String p = "271";
 
-        System.out.println(Arrays.toString(sol.solution(wallpaper)));
+        System.out.println(sol.solution(t, p));
     }
 }
