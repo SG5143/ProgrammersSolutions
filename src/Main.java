@@ -3,11 +3,11 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_147355 sol = new Sol_147355();
+        Sol_81301 sol = new Sol_81301();
 
-        String t = "3141592";
-        String p = "271";
+        String s = "one4seveneight";
 
-        System.out.println(sol.solution(t, p));
+        System.out.println(sol.solution(s));
+
     }
 }
