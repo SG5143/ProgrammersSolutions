@@ -3,11 +3,10 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Sol_67256 sol = new Sol_67256();
+        Sol_12977 sol = new Sol_12977();
+        int[] nums = new int[]{1,2,3,4};
 
-        int[] number = new int[]{1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5};
-        String hand = "right";
+        System.out.println(sol.solution(nums));
 
-        System.out.println(sol.solution(number, hand));
     }
 }
