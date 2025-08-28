@@ -35,6 +35,6 @@ public class Sol_12926 {
 
     public static void main(String[] args) {
         Sol_12926 sol = new Sol_12926();
-        System.out.println(sol.solution("AB", 1)); // TUE
+        System.out.println(sol.solution("AB", 1));
     }
 }
