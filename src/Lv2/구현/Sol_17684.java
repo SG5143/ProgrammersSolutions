@@ -1,4 +1,4 @@
-package Lv2.시뮬레이션;
+package Lv2.구현;
 
 import java.util.*;
 
